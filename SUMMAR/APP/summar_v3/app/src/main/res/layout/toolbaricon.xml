@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#00000000"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toLeftOf="@id/bt2"
+        android:background="@drawable/homebutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/bt2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="660dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toLeftOf="@id/bt3"
+        android:background="@drawable/classficationbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/bt3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="660dp"
+        android:background="@drawable/searchbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="660dp"
+        android:layout_toRightOf="@id/bt3"
+        android:background="@drawable/followingbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/bt3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="660dp"
+        android:layout_toRightOf="@id/bt4"
+        android:background="@drawable/personbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/bt4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="420dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="650dp"
+        android:src="@drawable/roup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

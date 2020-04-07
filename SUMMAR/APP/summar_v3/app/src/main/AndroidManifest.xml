@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.summar_v3">
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission
+        android:name="android.permission.INTERNAL_SYSTEM_WINDOW"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_SETTINGS"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="SUMMAR 3.0"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.example.summar_v3.login"></activity>
+        <activity android:name="com.example.summar_v3.follow_item" />
+        <activity android:name="com.example.summar_v3.following" />
+        <activity android:name="com.example.summar_v3.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.summar_v3.home" />
+        <activity android:name="com.example.summar_v3.Register" />
+        <activity android:name="com.example.summar_v3.MainActivity" />
+        <activity android:name="com.example.summar_v3.Web_url" />
+        <activity android:name="com.example.summar_v3.Article" />
+        <activity android:name="com.example.summar_v3.classification" />
+        <activity
+            android:name="com.example.summar_v3.settingg"
+            android:configChanges="orientation|keyboardHidden"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity android:name="com.example.summar_v3.personal" />
+        <activity android:name="com.example.summar_v3.Search" />
+        <service android:name="com.example.summar_v3.FloatingWindow" />
+    </application>
+
+</manifest>

@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".classification">
+
+
+    <ScrollView
+        android:id="@+id/scrolview"
+        android:layout_width="410dp"
+        android:layout_height="670dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tool"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/global_btn"
+                android:gravity="bottom|left"
+                android:text="全球"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/edu"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/edubutton"
+                android:gravity="bottom|left"
+                android:text="教育"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/politics_btn"
+                android:gravity="bottom|left"
+                android:text="政治"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/digital_btn"
+                android:gravity="bottom|left"
+                android:text="數位"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/business_btn"
+                android:gravity="bottom|left"
+                android:text="產經"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/n"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/sport_btn"
+                android:gravity="bottom|left"
+                android:text="運動"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="390dp"
+                android:layout_height="165dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/life_btn"
+                android:gravity="bottom|left"
+                android:text="生活"
+                android:textColor="#00000000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toLeftOf="@id/bt2"
+        android:background="@drawable/homebutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/bt2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="740dp"
+        android:layout_marginEnd="48dp"
+        android:layout_toLeftOf="@id/bt3"
+        android:background="@drawable/classficationbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@id/bt3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="740dp"
+        android:background="@drawable/searchbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="740dp"
+        android:layout_toRightOf="@id/bt3"
+        android:background="@drawable/followingbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/bt3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bt5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="740dp"
+        android:layout_toRightOf="@id/bt4"
+        android:background="@drawable/personbutton"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@id/bt4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="420dp"
+        android:layout_height="42dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="730dp"
+        android:src="@drawable/roup3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
